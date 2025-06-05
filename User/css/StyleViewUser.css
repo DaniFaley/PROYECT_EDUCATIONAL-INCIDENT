@@ -1,0 +1,50 @@
+html, body {
+    height: 100%; /* Asegúrate de que el html y el body ocupen toda la altura */
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9; /* Fondo claro en lugar de la imagen */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 10%;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro con opacidad */
+    color: white;
+}
+
+.logo-user {
+    display: flex;
+    align-items: center;
+}
+
+.logo-user img {
+    height: 100px; /* Ajusta la altura del logo */
+    margin-right: 20px;
+}
+
+.user-info h2, 
+.user-info p {
+    margin: 0;
+}
+
+.nav-options {
+    display: flex;
+}
+
+.nav-options a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo blanco con opacidad */
+}
+
+.nav-options a:hover {
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo al pasar el mouse */
+}

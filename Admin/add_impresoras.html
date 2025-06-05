@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Impresora</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        .container {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        /* Estilo para la lista de opciones */
+        .lista-opciones {
+            text-align: left;
+            margin-top: 10px;
+        }
+        .lista-opciones label {
+            display: block;
+            padding: 8px;
+            cursor: pointer;
+        }
+        .lista-opciones input {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Agregar Impresora</h2>
+        <form action="confirmacion_impresora.php" method="POST">
+            <label>Identificador:</label>
+            <input type="text" name="identificador" required>
+
+            <label>Marca:</label>
+            <select name="marca" required>
+                <option value="HP">HP</option>
+                <option value="Canon">Canon</option>
+                <option value="Epson">Epson</option>
+                <option value="Brother">Brother</option>
+                <option value="Samsung">Samsung</option>
+            </select>
+
+            <label>Modelo:</label>
+            <select name="modelo" required>
+                <option value="DeskJet">DeskJet</option>
+                <option value="PIXMA">PIXMA</option>
+                <option value="EcoTank">EcoTank</option>
+                <option value="HL-L2360DW">HL-L2360DW</option>
+                <option value="Xpress">Xpress</option>
+            </select>
+
+            <label>Tipo de Conexión:</label>
+            <select name="conexion" required>
+                <option value="USB">USB</option>
+                <option value="Wi-Fi">Wi-Fi</option>
+                <option value="Ethernet">Ethernet</option>
+            </select>
+
+            <label>Resolución:</label>
+            <select name="resolucion" required>
+                <option value="600x600">600x600 dpi</option>
+                <option value="1200x1200">1200x1200 dpi</option>
+                <option value="4800x1200">4800x1200 dpi</option>
+            </select>
+
+            <label>Fecha de Compra:</label>
+            <input type="date" name="fecha_compra" required>
+
+            <button type="submit">Guardar</button>
+        </form>
+    </div>
+
+</body>
+</html>

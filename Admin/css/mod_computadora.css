@@ -1,0 +1,88 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Degradado azul */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container {
+    background: rgba(255, 255, 255, 0.15); /* Fondo con transparencia */
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
+    backdrop-filter: blur(10px);
+}
+
+.form-container h2 {
+    font-size: 24px;
+    margin-bottom: 1rem;
+    color: white;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.form-group input, 
+.form-group select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    background: transparent;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #6a11cb; /* Morado vibrante */
+    box-shadow: 0 0 5px rgba(106, 17, 203, 0.5);
+}
+
+.form-group input[type="date"] {
+    color: white;
+}
+
+.form-group select {
+    appearance: none;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="%23FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>') no-repeat;
+    background-position: right 1rem center;
+    background-size: 1.5rem;
+}
+
+.btn-container {
+    text-align: center;
+}
+
+.btn-submit {
+    padding: 0.8rem 1.5rem;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    background: #6a11cb; /* Morado */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background: #4a47a3; /* Azul más oscuro */
+}

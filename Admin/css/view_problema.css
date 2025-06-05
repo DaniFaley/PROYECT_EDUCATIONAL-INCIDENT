@@ -1,0 +1,110 @@
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Color de fondo neutro */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 10%;
+    align-items: center;
+    padding: 20px;
+    background-color: #333; /* Fondo oscuro */
+    color: white;
+}
+
+.logo-user {
+    display: flex;
+    align-items: center;
+}
+
+.user-info h2, 
+.user-info p {
+    margin: 0;
+}
+
+.nav-options {
+    display: flex;
+}
+
+.nav-options a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #555; /* Fondo oscuro */
+    transition: background 0.3s ease-in-out;
+}
+
+.nav-options a:hover {
+    background-color: #777; /* Cambio de color al pasar el mouse */
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    background: white; /* Fondo blanco */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: white;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus, 
+.form-group select:focus, 
+.form-group textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}

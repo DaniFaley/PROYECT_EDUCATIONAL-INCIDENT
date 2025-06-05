@@ -1,0 +1,122 @@
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Fondo gris claro */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 15px 30px;
+    background-color: #343a40; /* Color oscuro moderno */
+    color: white;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.logo-user {
+    display: flex;
+    align-items: center;
+}
+
+.logo-user img {
+    height: 80px; /* Tamaño del logo reducido */
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
+.user-info h2, 
+.user-info p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.nav-options {
+    display: flex;
+}
+
+.nav-options a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 6px;
+    background-color: #495057;
+    transition: background 0.3s ease;
+}
+
+.nav-options a:hover {
+    background-color: #6c757d;
+}
+
+/* Estilos para la tabla */
+table {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+th {
+    background-color: #343a40;
+    color: white;
+    font-weight: bold;
+}
+
+td {
+    background-color: #ffffff;
+    color: #333;
+}
+
+tr:nth-child(even) td {
+    background-color: #f8f9fa;
+}
+
+tr:hover td {
+    background-color: #e9ecef;
+}
+
+/* Estilo para los botones */
+button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #b52a37;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    text-align: center;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Computadora</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        .container {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        /* Estilo para la lista de opciones */
+        .lista-opciones {
+            text-align: left;
+            margin-top: 10px;
+        }
+        .lista-opciones label {
+            display: block;
+            padding: 8px;
+            cursor: pointer;
+        }
+        .lista-opciones input {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Agregar Computadora</h2>
+        <form action="confirmacion.php" method="POST">
+            <label>Identificador:</label>
+            <input type="text" name="identificador" required>
+
+            <label>Marca:</label>
+            <select name="marca" required>
+                <option value="HP">HP</option>
+                <option value="Dell">Dell</option>
+                <option value="Lenovo">Lenovo</option>
+                <option value="Apple">Apple</option>
+                <option value="Asus">Asus</option>
+            </select>
+
+            <label>Modelo:</label>
+            <select name="modelo" required>
+                <option value="Pavilion">Pavilion</option>
+                <option value="Inspiron">Inspiron</option>
+                <option value="ThinkPad">ThinkPad</option>
+                <option value="MacBook Pro">MacBook Pro</option>
+                <option value="ZenBook">ZenBook</option>
+            </select>
+
+            <label>Tipo:</label>
+            <div class="lista-opciones">
+                <label><input type="radio" name="tipo" value="Escritorio" required> Escritorio</label>
+                <label><input type="radio" name="tipo" value="Portátil" required> Portátil</label>
+            </div>
+
+            <label>Capacidad:</label>
+            <select name="capacidad" required>
+                <option value="256GB">256GB</option>
+                <option value="512GB">512GB</option>
+                <option value="1TB">1TB</option>
+                <option value="2TB">2TB</option>
+            </select>
+
+            <label>Fecha de Compra:</label>
+            <input type="date" name="fecha_compra" required>
+
+            <button type="submit">Guardar</button>
+        </form>
+    </div>
+
+</body>
+</html>

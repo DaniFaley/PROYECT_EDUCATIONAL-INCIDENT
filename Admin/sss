@@ -1,0 +1,33 @@
+ <a href="add_computadoras.html"><button class="buttonA" href="">Agregar Computadoras</button></a> 
+    <table>
+        <tr>
+              <th>ID</th>
+              <th>salon</th>
+              <th>Tipo computadora</th>
+              <th>Procesador</th>
+              <th>ROM</th>
+              <th>RAM</th>
+              <th>Serie</th>
+              <th>MAC</th>
+              <th>Fecha de compra</th>
+              <th>Acciones</th>
+        </tr>
+        <?php while ($compus = mysqli_fetch_assoc($computadoras)) { ?>
+            <tr>
+               <td><?= $compus['id_computadora'] ?></td>
+
+                <td><?= $compus['id_salon'] ?></td>
+
+                <td><?= $compus['pc_tipo'] ?></td>
+                <td><?= $compus['procesador'] ?></td>
+                <td><?= $compus['rom'] ?></td>
+                <td><?= $compus['ram'] ?></td>
+                <td><?= $compus['serie'] ?></td>
+                <td><?= $compus['MAC'] ?></td>
+                <td><?= $compus['fecha_compra'] ?></td>
+                <td>
+                    <a href="del_departamento.php?id=<?= $department['id_departamento'] ?>"><button>Eliminar</button></a>
+                </td>
+                </tr>
+        <?php } ?>
+    </table>      

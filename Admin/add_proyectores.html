@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Proyector</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        .container {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        /* Estilo para la lista de opciones */
+        .lista-opciones {
+            text-align: left;
+            margin-top: 10px;
+        }
+        .lista-opciones label {
+            display: block;
+            padding: 8px;
+            cursor: pointer;
+        }
+        .lista-opciones input {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Agregar Proyector</h2>
+        <form action="confirmacion_proyector.php" method="POST">
+            <label>Identificador:</label>
+            <input type="text" name="identificador" required>
+
+            <label>Marca:</label>
+            <select name="marca" required>
+                <option value="Epson">Epson</option>
+                <option value="BenQ">BenQ</option>
+                <option value="ViewSonic">ViewSonic</option>
+                <option value="LG">LG</option>
+                <option value="Optoma">Optoma</option>
+            </select>
+
+            <label>Modelo:</label>
+            <select name="modelo" required>
+                <option value="EH-TW7100">EH-TW7100</option>
+                <option value="XGA">XGA</option>
+                <option value="M1 Mini">M1 Mini</option>
+                <option value="PH550">PH550</option>
+                <option value="H1188">H1188</option>
+            </select>
+
+            <label>Resolución:</label>
+            <select name="resolucion" required>
+                <option value="1920x1080">1920x1080</option>
+                <option value="1280x720">1280x720</option>
+                <option value="3840x2160">3840x2160</option>
+            </select>
+
+            <label>Tipo de Conexión:</label>
+            <select name="conexion" required>
+                <option value="HDMI">HDMI</option>
+                <option value="VGA">VGA</option>
+                <option value="Wi-Fi">Wi-Fi</option>
+            </select>
+
+            <label>Brillo (Lúmenes):</label>
+            <input type="number" name="brillo" required>
+
+            <label>Fecha de Compra:</label>
+            <input type="date" name="fecha_compra" required>
+
+            <button type="submit">Guardar</button>
+        </form>
+    </div>
+
+</body>
+</html>
